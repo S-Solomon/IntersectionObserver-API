@@ -17,3 +17,16 @@
     transform: none;
     visibility: visible;
 }
+
+/* ACCESSIBILITY CONCERNS */
+/* 
+    Although animation might look cool, some people have physical issues with them. 
+    In their case, animations is detrimental to the user experience. Luckily, there's a 
+    special media query you can implement for those users - namely prefers-reduced-motion.
+*/
+
+@media (prefers-reduced-motion) {
+    .fade-in-section {
+        transform: translate(1vh);
+    }
+}
